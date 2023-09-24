@@ -8,7 +8,55 @@ export async function getStaticProps() {
     process.env.SUPABASE_SERVICE_ROLE_KEY || ''
   )
 
-  const { data } = await supabaseAdmin.from('images').select('*').order('id')
+  const  data   = [{
+    "id": 1,
+    "href": "https://pixai.art/artwork/1660743049759171407",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/68c4eb35-1a9b-4dc1-984b-d805c81bf283",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://pixai.art/artwork/1660535495052273288",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/1c0aea92-84e9-4ad0-a08c-aa7f557184fd",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://pixai.art/artwork/1662487252975080731",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/50e310df-afe9-4539-a847-9b802555ff04",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://pixai.art/artwork/1660588242782861024",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/aad9b97c-d6af-4333-ac77-e83430d53522",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://images-ng.pixai.art/images/thumb/a6792590-ab43-4a11-5114-01f7bdabad00",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/a6792590-ab43-4a11-5114-01f7bdabad00",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://pixai.art/artwork/1662248734101640693",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/20fead7e-cdd6-41aa-bed9-630e525947a3",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://pixai.art/artwork/1661304959029186316",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/9c95b3be-c667-4d8f-b7fd-08d6cbcf465b",
+"name":"",
+"username":""},
+  {
+    "id": 1,
+    "href": "https://pixai.art/artwork/1661946280972893466",
+  "imageSrc":"https://images-ng.pixai.art/images/thumb/633102a9-95ee-4206-a1f9-3833ef86151f",
+"name":"",
+"username":""}
+]
   return {
     props: {
       images: data,
